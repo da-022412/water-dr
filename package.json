@@ -3,5 +3,28 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0"
-  }
+  },
+  "name": "water-dr",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/da-022412/water-dr.git"
+  },
+  "author": "Dennis Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/da-022412/water-dr/issues"
+  },
+  "homepage": "https://github.com/da-022412/water-dr#readme",
+  "description": "",
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
 }

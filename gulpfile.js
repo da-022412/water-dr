@@ -6,7 +6,7 @@ gulp.task('css', function () {
 	return gulp.src('./src/scss/**/*.scss')
         .pipe(autoprefixer())
         .pipe(sass({outputStyle: 'compressed'}))
-		.pipe(gulp.dest('./dist/css'));
+		.pipe(gulp.dest('./dist/assets/css'));
 });
 
 gulp.task('default', gulp.series('css'));

@@ -1,0 +1,86 @@
+:root {
+  --accent: #DD1515;
+  --primary: #006C9F;
+  --secondary: #58B9DA;
+  --text: #252525;
+  --white: #fff;
+}
+
+.is-white {
+  color: var(--white);
+}
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@font-face {
+  font-family: "WorkSans";
+  src: url(../fonts/WorkSans-Bold.ttf) format("truetype");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "WorkSans", sans-serif;
+}
+
+.heading-1 {
+  font-size: 5rem;
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.accent-text {
+  color: var(--secondary);
+}
+
+.body-text {
+  font-size: 1.25rem;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+.center {
+  text-align: center;
+}
+
+.columns {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.hero-slider {
+  background: url("../images/hero-slider-1.jpg") center center/cover no-repeat;
+  min-height: 80vh;
+}
+
+.slide {
+  max-width: 690px;
+}
+
+/*# sourceMappingURL=style.css.map */

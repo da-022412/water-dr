@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.accent-text {
+    color: var(--secondary);
+}
+
+.body-text {
+    font-size: 1.25rem;
+}
