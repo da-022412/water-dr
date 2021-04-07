@@ -10,10 +10,15 @@ h4,
 h5,
 h6 {
     font-family: "WorkSans", sans-serif;
+    margin: 0 0 1.5rem 0;
 }
 
 .heading-1 {
     font-size: 5rem;
+}
+
+.heading-2 {
+    font-size: 3.75rem;
 }
 
 .heading-3 {
@@ -21,5 +26,9 @@ h6 {
 }
 
 .heading-4 {
+    font-size: 1.75rem;
+}
+
+.heading-5 {
     font-size: 1.25rem;
 }
