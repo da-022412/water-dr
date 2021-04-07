@@ -14,6 +14,7 @@
 # Global
 --------------------------------------------------------------*/
 body, html {
+  font-size: 100%;
   margin: 0;
   padding: 0;
 }
@@ -42,6 +43,10 @@ h6 {
   font-size: 2.5rem;
 }
 
+.heading-4 {
+  font-size: 1.25rem;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf) format("truetype");
@@ -65,12 +70,6 @@ p {
   text-align: center;
 }
 
-.columns {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -81,6 +80,35 @@ p {
 
 .slide {
   max-width: 690px;
+}
+
+.slides {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -64px;
+  max-width: 1200px;
+}
+
+.benefit {
+  background-color: var(--primary);
+  width: 400px;
+}
+
+.secondary-bene {
+  background-color: var(--secondary);
+}
+
+.benefit-content {
+  min-height: 240px;
+  padding: 1rem 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

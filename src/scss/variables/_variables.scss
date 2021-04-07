@@ -1,3 +1,7 @@
+$screen-sm: 767px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
 :root {
     --accent: #DD1515;
     --primary: #006C9F;
@@ -8,4 +12,22 @@
 
 .is-white {
     color: var(--white);
+}
+
+@mixin sm {
+    @media(max-width:$screen-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media(max-width:$screen-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media(max-width:$screen-lg) {
+        @content;
+    }
 }

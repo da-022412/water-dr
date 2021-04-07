@@ -6,3 +6,9 @@
 .slide {
     max-width: 690px;
 }
+
+.slides {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
