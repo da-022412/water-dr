@@ -25,6 +25,16 @@
     width: 33.333%;
 }
 
+.col-1-4 {
+    box-sizing: border-box;
+    width: 25%;
+    margin-right: 5.5%;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
 .col-1-6 {
     box-sizing: border-box;
     width: 66.666%
