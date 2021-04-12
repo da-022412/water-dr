@@ -1,0 +1,18 @@
+.hero-slider {
+    align-items: center;
+    background: url('../images/hero-slider-1.jpg') center center/cover no-repeat;
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+.slide {
+    max-width: 720px;
+}
+
+.slides {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

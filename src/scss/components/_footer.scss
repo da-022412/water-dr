@@ -2,3 +2,12 @@
     background-color: var(--primary);
     padding: 12.5rem 0;
 }
+
+.footer-container {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.footer-container .columns {
+    align-items: flex-start;
+}

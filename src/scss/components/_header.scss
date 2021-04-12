@@ -1,11 +1,36 @@
 .header {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .4);
     border-radius: 4px;
+    left: 0;
+    margin: 0 auto;
     margin-top: 2rem;
     padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 1440px;
+    z-index: 1;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav {
+    align-items: center;
     display: flex;
+}
+
+.nav a {
+    margin-right: 2.75rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav .body-text {
+    margin-bottom: 0;
 }
