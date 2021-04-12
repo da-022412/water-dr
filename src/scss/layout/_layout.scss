@@ -2,6 +2,10 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+    @include md {
+        flex-wrap: wrap;
+    }
 }
 
 .columns-3 {
@@ -9,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+
+    @include md {
+        flex-wrap: wrap;
+    }
 }
 
 .columns-tight {
@@ -48,6 +56,9 @@
 
 .wrap {
     margin: 6.25rem auto;
-    max-width: 1440px;
-    width: 100%;
+    width: calc(min(1440px, 80%));
+
+    @include lg {
+        margin: 3.75rem 1rem;
+    }
 }

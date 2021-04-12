@@ -3,9 +3,18 @@
 }
 
 .promos {
+    margin: 0 auto;
     margin-bottom: 15%;
     max-width: 1200px;
     transform: translate(0, 30%);
+}
+
+.promos-hero {
+    min-height: 500px;
+}
+
+.promos-hero .heading-2 {
+    margin-bottom: 3rem;
 }
 
 .promo {

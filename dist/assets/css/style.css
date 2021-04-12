@@ -33,6 +33,7 @@ a:active {
 body, html {
   font-size: 100%;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -91,6 +92,13 @@ p {
   margin: 0 0 1.5rem 0;
 }
 
+label {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
 small {
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
@@ -117,12 +125,22 @@ small {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .columns {
+    flex-wrap: wrap;
+  }
+}
 
 .columns-3 {
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .columns-3 {
+    flex-wrap: wrap;
+  }
 }
 
 .columns-tight {
@@ -161,8 +179,12 @@ small {
 
 .wrap {
   margin: 6.25rem auto;
-  max-width: 1440px;
-  width: 100%;
+  width: calc(min(1440px, 80%));
+}
+@media (max-width: 1200px) {
+  .wrap {
+    margin: 3.75rem 1rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -216,6 +238,7 @@ small {
   font-size: 1.25rem;
   padding: 1.25rem 2.5rem;
   text-transform: uppercase;
+  transition: 0.3s;
 }
 
 .btn-xs {
@@ -226,6 +249,21 @@ small {
 .callout {
   background-color: var(--secondary);
   padding: 3.125rem 0;
+}
+
+.contact-section .columns {
+  align-items: flex-start;
+}
+
+.contact-card {
+  background-color: var(--secondary);
+  height: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+.contact-card img {
+  margin: 0 auto 2rem auto;
 }
 
 .faq {
@@ -259,6 +297,18 @@ small {
 
 .footer-container .columns {
   align-items: flex-start;
+}
+
+.alert {
+  color: var(--accent);
+}
+
+.form input,
+.form textarea {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .header {
@@ -306,9 +356,18 @@ small {
 }
 
 .promos {
+  margin: 0 auto;
   margin-bottom: 15%;
   max-width: 1200px;
   transform: translate(0, 30%);
+}
+
+.promos-hero {
+  min-height: 500px;
+}
+
+.promos-hero .heading-2 {
+  margin-bottom: 3rem;
 }
 
 .promo {
