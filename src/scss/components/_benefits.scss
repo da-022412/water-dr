@@ -1,11 +1,19 @@
 .benefits {
     margin-top: -64px;
     max-width: 1200px;
+
+    @include sm {
+        margin: 0 1rem;
+    }
 }
 
 .benefit {
     background-color: var(--primary);
     width: 400px;
+
+    @include sm {
+        margin: .5rem 0;
+    }
 }
 
 .accent-benefit {
@@ -16,4 +24,14 @@
     box-sizing: border-box;
     min-height: 280px;
     padding: 1rem 1.25rem;
+}
+
+@include sm {
+    .benefits {
+        margin: 0 1rem;
+    }
+
+    .benefit {
+        margin: .5rem 0;
+    }
 }

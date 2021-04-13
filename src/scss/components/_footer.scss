@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--primary);
-    padding: 12.5rem 0;
+    padding: 6.25rem 0;
 }
 
 .footer-container {
@@ -10,4 +10,14 @@
 
 .footer-container .columns {
     align-items: flex-start;
+}
+
+@include sm {
+    .footer {
+        padding: 3.75rem 1rem;
+    }
+
+    .footer-container {
+        width: auto;
+    }
 }

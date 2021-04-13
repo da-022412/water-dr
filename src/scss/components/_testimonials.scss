@@ -11,3 +11,13 @@
     margin: 0 auto;
     max-width: 1200px;
 }
+
+@include sm {
+    .testimonials {
+        padding: 1rem;
+    }
+
+    .testimonials-slider img {
+        width: 5%;
+    }
+}

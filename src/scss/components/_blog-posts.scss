@@ -8,3 +8,9 @@
     min-height: 220px;
     padding: 1rem 1.25rem;
 }
+
+@include sm {
+    .blog-post {
+        margin: .5rem 0;
+    }
+}

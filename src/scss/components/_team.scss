@@ -1,3 +1,11 @@
 .team-member {
     min-height: 400px;
+
+    & img {
+        width: 100%;
+    }
+
+    @include sm {
+        margin: auto;
+    }
 }

@@ -27,6 +27,10 @@ small {
 
 .body-text {
     font-size: 1.25rem;
+
+    @include sm {
+        font-size: 1.125rem;
+    }
 }
 
 .text-center {
