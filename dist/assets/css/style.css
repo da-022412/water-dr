@@ -365,7 +365,7 @@ small {
 
 .footer-container {
   margin: 0 auto;
-  width: 1440px;
+  width: calc(min(1440px, 90%));
 }
 
 .footer-container .columns {
@@ -379,6 +379,10 @@ small {
 @media (max-width: 767px) {
   .footer {
     padding: 3.75rem 1rem;
+  }
+
+  .footer .col-1-4 {
+    margin-bottom: 1rem;
   }
 
   .footer-container {
