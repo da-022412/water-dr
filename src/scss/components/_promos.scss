@@ -1,5 +1,5 @@
 .promos-section {
-    background: url(../images/water-dr-home.jpg);
+    background-image: url(../images/water-dr-home.jpg);
 
     @include sm {
         background: none;
@@ -13,9 +13,14 @@
     transform: translate(0, 30%);
 
     @include sm {
-        color: #252525;
         margin-bottom: 0;
         transform: none;
+    }
+
+    & .heading-2 {
+        @include sm {
+            color: #252525;
+        }
     }
 }
 
@@ -28,24 +33,27 @@
 }
 
 .promo {
+    background: center center/cover no-repeat;
     box-sizing: border-box;
-    min-height: 300px;
+    margin: auto;
+    min-height: 320px;
     padding: 3.75rem 1.25rem;
+    width: 80%;
 
     @include sm {
-        margin: .5rem 0;
+        margin: .5rem auto;
         width: 100%;
     }
 }
 
 .promo-1 {
-    background: url(../images/twisting-pipe.jpeg);
+    background-image: url(../images/twisting-pipe.jpeg);
 }
 
 .promo-2 {
-    background: url(../images/checking-wires.jpeg);
+    background-image: url(../images/checking-wires.jpeg);
 }
 
 .promo-3 {
-    background: url(../images/blue-drums.jpeg);
+    background-image: url(../images/blue-drums.jpeg);
 }
