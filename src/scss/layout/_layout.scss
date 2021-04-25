@@ -50,6 +50,15 @@
 }
 
 @include lg {
+    .col-1-4 {
+        margin-right: 0;
+        width: 47.5%;
+    }
+
+    .columns-4 {
+        flex-wrap: wrap;
+    }
+
     .wrap {
         margin: 3.75rem auto;
     }
